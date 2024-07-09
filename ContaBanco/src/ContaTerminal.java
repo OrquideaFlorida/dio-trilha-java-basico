@@ -18,9 +18,9 @@ public class ContaTerminal {
 
         System.out.println("Informe o valor a ser depositado (R$): ");
         double saldo = usuario.nextDouble();
-
+        usuario.close();
         //Obter pela classe scanner os valores digitados no terminal
         //Exibir a mensagem final da conta criada
-        System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo R$" + saldo + "já está disponível para saque.");
+        System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + conta + " e seu saldo R$" + saldo + " já está disponível para saque.");
     }
 }
