@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo{
     public static void main(String[] args) {
         //6º
-        String [] candidatos =  {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};
+        String [] candidatos =  {"FELIPE","MARCIA","JULIA","PAULO","AUGUSTO"};
         for (String candidato: candidatos){
             entrandoEmContato(candidato);
         }
@@ -34,7 +34,7 @@ public class ProcessoSeletivo{
         if(atendeu)
 			System.out.println("CONSEGUIMOS CONTATO COM " + candidato +" NA " + tentativasRealizadas + " TENTATIVA");
 		else
-			System.out.println("NÃO CONSEGUIMOS CONTATO COM " + candidato +", NÚMERO MAXIMO TENTATIVAS " + tentativasRealizadas + " REALIZADA");
+			System.out.println("NAO CONSEGUIMOS CONTATO COM " + candidato +", NUMERO MAXIMO DE " + tentativasRealizadas + " TENTATIVAS REALIZADAS");
     }
 
     //7º Criando um método auxiliar
@@ -45,7 +45,7 @@ public class ProcessoSeletivo{
 
     //5º
     static void imprimirSelecionados(){
-        String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};
+        String [] candidatos = {"FELIPE","MARCIA","JULIA","PAULO","AUGUSTO"};
         System.out.println("Imprimindo a lista de candidado pelo índice do elemento");
 
         for(int indice = 0; indice < candidatos.length; indice++){
@@ -61,7 +61,7 @@ public class ProcessoSeletivo{
 
     //3º Criando o método com os candidatos participantes de acordo com a pretensão salarial
     static void selecaoCandidatos(){
-        String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","FABRÍCIO","MIRELA","DANIELA","JORGE"};
+        String [] candidatos = {"FELIPE","MARCIA","JULIA","PAULO","AUGUSTO","MÔNICA","FABRÍCIO","MIRELA","DANIELA","JORGE"};
 
         int candidatosSelecionados = 0; //Quantos de candidatos selecionados
         int candidatosAtual = 0; //Índice do array
